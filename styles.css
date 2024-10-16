@@ -8,18 +8,22 @@ body {
 }
 
 header {
-    background-color: #000000; /* True black header background */
+    background-color: #000000;
     color: #fff;
-    padding: 20px;
+    padding: 10px 0;
     text-align: center;
 }
 
 h1 {
-    font-size: 3em; /* Increase font size for your name */
+    font-size: 3em; /* Larger font for desktop */
+}
+
+h2 {
+    font-size: 2em;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1000px; /* Max width for larger screens */
     margin: 40px auto;
     padding: 20px;
 }
@@ -32,12 +36,9 @@ section {
     margin-bottom: 20px;
 }
 
-h1, h2 {
-    color: #ffffff;
-}
-
 p {
     color: #e0e0e0;
+    font-size: 1.1em; /* Larger font size for readability on desktop */
 }
 
 a {
@@ -54,32 +55,22 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    margin-top: 20px;
 }
 
-.icon {
-    margin-right: 10px;
-}
-
-.emoji {
-    font-size: 1.2em;
-    margin-right: 5px;
-}
-
-/* Contact buttons */
 .contact-buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .contact-button {
-    background-color: #000000; /* Set contact buttons to black */
+    background-color: #000000;
     color: #fff;
-    padding: 20px 30px; /* Increased size for contact buttons */
+    padding: 15px 30px;
     border-radius: 50px;
-    border: 2px solid #ffffff; /* Add white outline */
+    border: 2px solid #ffffff;
     text-align: center;
     font-size: 1.3em;
     display: flex;
@@ -90,75 +81,112 @@ footer {
 }
 
 .contact-button:hover {
-    background-color: #333333; /* Slight hover effect */
+    background-color: #333333;
     border-color: #666666;
 }
 
 .icon-colored {
-    width: 30px; /* Slightly bigger icons */
-    margin-right: 10px;
+    width: 30px;
 }
 
-/* Skills Section with Bigger Logos */
+/* Skills Section */
 .skills-logos img {
-    width: 96px; /* Increased size for skill logos */
+    width: 96px;
     margin-right: 10px;
 }
 
 .delphi-logo {
-    filter: invert(16%) sepia(86%) saturate(4850%) hue-rotate(349deg) brightness(93%) contrast(95%); /* Change to red */
+    filter: invert(16%) sepia(86%) saturate(4850%) hue-rotate(0deg) brightness(93%) contrast(95%); /* Red color for Delphi */
 }
 
-/* App Icon */
+/* Project Image (set.png) */
 .app-logo {
     width: 80px;
     height: 80px;
-    border-radius: 10px; /* Rounded rectangle for app icon */
+    border-radius: 10px; /* Rounded corners */
     margin-top: 10px;
-    margin-bottom: 20px; /* Add some spacing between the icon and the project description */
+    object-fit: cover; /* Maintain aspect ratio */
 }
 
 /* Play Store Button */
 .playstore-button {
     display: inline-block;
-    padding: 10px 20px; /* Adjust padding */
+    padding: 8px 20px;
     background-color: #34A853;
     color: #fff;
-    border-radius: 30px; /* Rounded corners */
+    border-radius: 30px;
     font-size: 1.1em;
     text-decoration: none;
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 10px;
-    width: fit-content; /* Button will adjust to content size */
-    justify-content: center; /* Center the text and icon */
+    justify-content: center;
+    width: fit-content;
 }
 
 .playstore-button img {
-    width: 20px; /* Set width for Play Store icon */
-}
-
-.playstore-button i {
-    font-size: 1.2em; /* Adjust icon size */
-}
-
-
-/* Experience and Education */
-.experience, .education {
-    display: flex;
-    align-items: center;
-    gap: 30px; /* Increased spacing between logo and content */
+    width: 20px;
 }
 
 .experience-logo, .education-logo {
     width: 60px;
     height: 60px;
-    border-radius: 10px; /* Rounded rectangles */
+    border-radius: 10px; /* Rounded squares */
 }
 
 .experience-content, .education-content {
     background-color: #2a2a2a;
-    padding: 25px; /* Increased padding inside the content */
+    padding: 25px;
     border-radius: 10px;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 6vw; /* Scale down for mobile */
+    }
+
+    h2 {
+        font-size: 4vw; /* Scale down subheadings for mobile */
+    }
+
+    .container {
+        max-width: 90vw; /* Smaller width for mobile */
+        margin: 20px auto;
+    }
+
+    p {
+        font-size: 4vw; /* Smaller font size for mobile */
+    }
+
+    .contact-button {
+        padding: 10px 20px; /* Reduce padding for mobile */
+        font-size: 4vw; /* Reduce font size for mobile */
+    }
+
+    .icon-colored {
+        width: 5vw; /* Reduce icon size for mobile */
+    }
+
+    .skills-logos img {
+        width: 20vw; /* Resize skill icons for mobile */
+    }
+
+    .app-logo {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .playstore-button {
+        font-size: 4vw; /* Reduce font size for mobile */
+    }
+
+    .experience-logo, .education-logo {
+        width: 20vw; /* Resize experience and education logos */
+        height: 20vw;
+    }
+
+    .experience-content, .education-content {
+        font-size: 4vw; /* Reduce content font size for mobile */
+    }
 }
