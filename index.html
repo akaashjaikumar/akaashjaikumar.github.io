@@ -5,58 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Akaash Jaikumar | Software Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #f0f4f8;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
+
         header {
             background-color: #333;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
-        section {
-            margin: 20px;
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
         }
+
+        section {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
         h1, h2 {
             color: #333;
         }
-        h1 {
-            font-size: 36px;
-        }
-        h2 {
-            font-size: 24px;
-        }
-        p {
+
+        p, ul {
             color: #555;
-            line-height: 1.6;
         }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
-        }
+
         a {
             color: #007BFF;
             text-decoration: none;
         }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         footer {
             background-color: #333;
             color: #fff;
             padding: 20px;
             text-align: center;
+            margin-top: 20px;
+        }
+
+        .icon {
+            margin-right: 10px;
+        }
+
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 5px;
         }
     </style>
 </head>
@@ -64,63 +75,72 @@
 
 <header>
     <h1>Akaash Jaikumar</h1>
-    <p>Software Developer | London, UK</p>
+    <p>Software Developer | London, UK 🚀</p>
 </header>
 
 <section class="container">
-    <h2>About Me</h2>
-    <p>I'm a passionate software engineer with expertise in .NET and C#. I love building scalable solutions and solving real-world problems.</p>
+    <section>
+        <h2>About Me</h2>
+        <p>I'm a passionate software engineer with expertise in .NET and C#. 🖥️ I love building scalable solutions and solving real-world problems. 🚀</p>
+    </section>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>C#</li>
-        <li>.NET</li>
-        <li>Object Pascal</li>
-        <li>Delphi</li>
-        <li>SQL</li>
-        <li>Flutter</li>
-    </ul>
-
-    <h2>Projects</h2>
-    <div class="project">
-        <h3>Simple Expense Tracker</h3>
-        <p>"Get the job done" was the goal while developing this app. I always wanted a straightforward app which does just this. Hence, I made this as a simple app without any BS.</p>
-        <p><strong>Technologies Used:</strong> Flutter, SQL</p>
-        <p><a href="https://play.google.com/store/apps/details?id=com.decimium.simple_expense_tracker" target="_blank">View Project</a></p>
-    </div>
-
-    <h2>Experience</h2>
-    <div class="experience">
-        <h3>Software Developer</h3>
-        <p><strong>Company:</strong> MSC Technology</p>
-        <p><strong>Dates:</strong> August 2021 - September 2023</p>
+    <section>
+        <h2>Skills</h2>
         <ul>
-            <li>Implemented REST APIs with REST & HTTP client components.</li>
-            <li>Established authentication with and without client secrets using certificates and user credentials.</li>
-            <li>Managed databases with ASTA server, and MS connection components.</li>
-            <li>Translated data formats seamlessly using DLLs for XML – JSON conversion.</li>
-            <li>Migrated various projects from Delphi 2007 to 10.1.</li>
-            <li>Manually generated authentication tokens, keys, and X5T values for API implementation in Delphi.</li>
-            <li>Streamlined token generation with shell scripts for efficiency and security.</li>
-            <li>Utilized C# .NET for scalable REST API development with MVC architecture.</li>
+            <li>💻 C#</li>
+            <li>⚙️ .NET</li>
+            <li>📜 Object Pascal</li>
+            <li>🛠️ Delphi</li>
+            <li>💾 SQL</li>
+            <li>📱 Flutter</li>
         </ul>
-    </div>
+    </section>
 
-    <h2>Education</h2>
-    <div class="education">
-        <p><strong>Degree:</strong> Msc Computer Science</p>
-        <p><strong>Institution:</strong> Ravensbourne University, London</p>
-        <p><strong>Year Completed:</strong> 2024</p>
-    </div>
+    <section>
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Simple Expense Tracker</h3>
+            <p>"Get the job done" was the goal while developing this app. I always wanted a straightforward app which does just this. Hence, I made this as a simple app without any BS. 🛠️</p>
+            <p><strong>Technologies Used:</strong> Flutter, SQL</p>
+            <p><a href="https://play.google.com/store/apps/details?id=com.decimium.simple_expense_tracker" target="_blank">View Project</a></p>
+        </div>
+    </section>
 
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> akaashjaikumar@gmail.com</p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/akaashjaikumar/" target="_blank">akaashjaikumar</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/akaashjaikumar" target="_blank">akaashjaikumar</a></p>
+    <section>
+        <h2>Experience</h2>
+        <div class="experience">
+            <h3>Software Developer</h3>
+            <p><strong>Company:</strong> MSC Technology</p>
+            <p><strong>Dates:</strong> August 2021 - September 2023</p>
+            <ul>
+                <li>Implemented REST APIs with REST & HTTP client components. 🛠️</li>
+                <li>Established authentication with and without client secrets using certificates and user credentials. 🔒</li>
+                <li>Managed databases with ASTA server, and MS connection components. 💾</li>
+                <li>Translated data formats seamlessly using DLLs for XML – JSON conversion. 📜</li>
+                <li>Migrated various projects from Delphi 2007 to 10.1. 🚀</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="education">
+            <p><strong>Degree:</strong> MSc Computer Science 🎓</p>
+            <p><strong>Institution:</strong> Ravensbourne University, London</p>
+            <p><strong>Year Completed:</strong> 2024</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> <i class="fas fa-envelope icon"></i> akaashjaikumar@gmail.com</p>
+        <p><strong>LinkedIn:</strong> <i class="fab fa-linkedin icon"></i> <a href="https://www.linkedin.com/in/akaashjaikumar/" target="_blank">akaashjaikumar</a></p>
+        <p><strong>GitHub:</strong> <i class="fab fa-github icon"></i> <a href="https://github.com/akaashjaikumar" target="_blank">akaashjaikumar</a></p>
+    </section>
 </section>
 
 <footer>
-    <p>&copy; 2024 Akaash Jaikumar. All Rights Reserved.</p>
+    <p>&copy; 2024 Akaash Jaikumar. All Rights Reserved. 🎉</p>
 </footer>
 
 </body>
