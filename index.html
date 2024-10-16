@@ -6,70 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Akaash Jaikumar | Software Developer</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Space Grotesk', sans-serif;
-            background-color: #f0f4f8;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        section {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-
-        h1, h2 {
-            color: #333;
-        }
-
-        p, ul {
-            color: #555;
-        }
-
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .icon {
-            margin-right: 10px;
-        }
-
-        .emoji {
-            font-size: 1.2em;
-            margin-right: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
 
@@ -78,66 +15,84 @@
     <p>Software Developer | London, UK 🚀</p>
 </header>
 
-<section class="container">
-    <section>
-        <h2>About Me</h2>
-        <p>I'm a passionate software engineer with expertise in .NET and C#. 🖥️ I love building scalable solutions and solving real-world problems. 🚀</p>
-    </section>
+<div class="container">
+
+    <!-- Contact Buttons -->
+    <div class="contact-buttons">
+        <a href="mailto:akaashjaikumar@gmail.com" class="contact-button">
+            <img src="https://img.icons8.com/color/48/000000/gmail-new.png" alt="Email" class="icon-colored"> Email
+        </a>
+        <a href="https://www.linkedin.com/in/akaashjaikumar/" class="contact-button" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" class="icon-colored"> LinkedIn
+        </a>
+        <a href="https://github.com/akaashjaikumar" class="contact-button" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/github--v1.png" alt="GitHub" class="icon-colored"> GitHub
+        </a>
+    </div>
 
     <section>
+        <h2>About Me</h2>
+        <p>I’m a software developer who is always eager to learn new technologies and experiment with new ideas. Whether it's building scalable backend systems, creating intuitive user interfaces, or automating workflows, I’m driven by curiosity and a passion for innovation. I enjoy working on projects that solve real-world problems and continuously strive to improve my skills and knowledge. 🚀</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section>
         <h2>Skills</h2>
-        <ul>
-            <li>💻 C#</li>
-            <li>⚙️ .NET</li>
-            <li>📜 Object Pascal</li>
-            <li>🛠️ Delphi</li>
-            <li>💾 SQL</li>
-            <li>📱 Flutter</li>
-        </ul>
+        <div class="skills-logos">
+            <img src="https://img.icons8.com/color/96/000000/c-sharp-logo.png" alt="C#" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg" alt=".NET" />
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/delphi.svg" alt="Delphi" class="delphi-logo" />
+            <img src="https://img.icons8.com/color/96/000000/flutter.png" alt="Flutter" />
+            <img src="https://img.icons8.com/color/96/000000/mysql-logo.png" alt="SQL" />
+        </div>
     </section>
 
     <section>
         <h2>Projects</h2>
+        <div class="app-icon">
+            <img src="set.png" alt="App Icon" class="app-logo">
+        </div>
         <div class="project">
             <h3>Simple Expense Tracker</h3>
             <p>"Get the job done" was the goal while developing this app. I always wanted a straightforward app which does just this. Hence, I made this as a simple app without any BS. 🛠️</p>
             <p><strong>Technologies Used:</strong> Flutter, SQL</p>
-            <p><a href="https://play.google.com/store/apps/details?id=com.decimium.simple_expense_tracker" target="_blank">View Project</a></p>
+            <a href="https://play.google.com/store/apps/details?id=com.decimium.simple_expense_tracker" target="_blank" class="playstore-button">
+                <img src="https://img.icons8.com/color/48/000000/google-play.png" alt="Google Play Icon" /> View on Play Store
+            </a>
         </div>
     </section>
 
+    <!-- Experience Section -->
     <section>
         <h2>Experience</h2>
         <div class="experience">
-            <h3>Software Developer</h3>
-            <p><strong>Company:</strong> MSC Technology</p>
-            <p><strong>Dates:</strong> August 2021 - September 2023</p>
-            <ul>
-                <li>Implemented REST APIs with REST & HTTP client components. 🛠️</li>
-                <li>Established authentication with and without client secrets using certificates and user credentials. 🔒</li>
-                <li>Managed databases with ASTA server, and MS connection components. 💾</li>
-                <li>Translated data formats seamlessly using DLLs for XML – JSON conversion. 📜</li>
-                <li>Migrated various projects from Delphi 2007 to 10.1. 🚀</li>
-            </ul>
+            <img src="msc-logo.png" alt="MSC Logo" class="experience-logo">
+            <div class="experience-content">
+                <h3>Software Developer</h3>
+                <p>MSC Technology | August 2021 - September 2023</p>
+                <ul>
+                    <li>Developed REST APIs with secure authentication.</li>
+                    <li>Managed databases and performed data format conversions.</li>
+                    <li>Migrated legacy codebases from Delphi to newer versions.</li>
+                    <li>Utilized C# .NET for scalable REST API development.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
+    <!-- Education Section -->
     <section>
         <h2>Education</h2>
         <div class="education">
-            <p><strong>Degree:</strong> MSc Computer Science 🎓</p>
-            <p><strong>Institution:</strong> Ravensbourne University, London</p>
-            <p><strong>Year Completed:</strong> 2024</p>
+            <img src="ravensbourne-logo.png" alt="Ravensbourne Logo" class="education-logo">
+            <div class="education-content">
+                <p>MSc Computer Science</p>
+                <p>Ravensbourne University, London | 2024</p>
+            </div>
         </div>
     </section>
 
-    <section>
-        <h2>Contact</h2>
-        <p><strong>Email:</strong> <i class="fas fa-envelope icon"></i> akaashjaikumar@gmail.com</p>
-        <p><strong>LinkedIn:</strong> <i class="fab fa-linkedin icon"></i> <a href="https://www.linkedin.com/in/akaashjaikumar/" target="_blank">akaashjaikumar</a></p>
-        <p><strong>GitHub:</strong> <i class="fab fa-github icon"></i> <a href="https://github.com/akaashjaikumar" target="_blank">akaashjaikumar</a></p>
-    </section>
-</section>
+</div>
 
 <footer>
     <p>&copy; 2024 Akaash Jaikumar. All Rights Reserved. 🎉</p>
